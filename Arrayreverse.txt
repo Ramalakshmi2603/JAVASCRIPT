@@ -1,0 +1,14 @@
+PROGRAM:
+
+function reversearray(arr) 
+{
+arr.reverse();
+console.log(arr);
+}
+const array = ["h","e","l","l","o"];
+reversearray(array) ;
+
+
+OUTPUT:
+
+["o","l","l","e","h"]

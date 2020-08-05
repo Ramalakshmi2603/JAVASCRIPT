@@ -1,0 +1,15 @@
+PROGRAM - SQUAREROOT OF A NUMBER.
+
+
+Program: 
+
+function squareroot(num)
+{
+var value = console.log(Math.sqrt(num));
+}
+const input = prompt();
+squareroot(input);
+
+Input: 144
+
+Output: 12

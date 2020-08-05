@@ -1,0 +1,41 @@
+PROGRAM - EVENODDINARRAY
+
+Program:
+
+function checkevenodd(arr)
+{
+  var evenarray = [];
+  var oddarray = [];
+	for (let i=0;i<size ; i++) 
+	  {
+	    if (arr[i]%2==0) 
+	      {
+        	evenarray.push(arr[i]) ;
+       	      }
+    	    else
+      	      {
+        	oddarray.push(arr[i]);
+      	      }
+   	  }
+  console.log(evenarray.sort());
+  console.log(oddarray.sort().reverse());
+}
+
+var inputArray = [];
+var size = prompt (); 
+
+for ( let i=0; i<size; i++)
+{	
+	inputArray[i] = prompt('Enter Element ' + (i+1));
+}
+console.log(inputArray)
+checkevenodd(inputArray);
+
+Input:
+10
+1 2 3 4 5 6 7 8 9 10
+
+Output:
+["1","2","3","4","5","6","7","8","9","10"]
+["10","2","4","6","8"]
+["9","7","5","3","1"]

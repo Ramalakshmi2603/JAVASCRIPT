@@ -1,0 +1,38 @@
+PROGRAM - BINARY SEARCH
+
+Program:
+
+let array = [33,44,22,56,11,58,47,95,38,99];
+function binary_search(array,value)
+{
+  let high = array.length-1;
+  let low = 0;
+  let mid = 0;
+  while (low<=high)
+  {
+    mid=Math.floor((high+low)/2);
+    if(array[mid]===value)
+    {
+      console.log("Found");
+      return array[mid];
+    }
+    else if(value > array[mid])
+    {
+      low = mid+1;
+    }
+    else
+    {
+      high = mid-1;
+    }
+  }
+  return -1,console.log("Not found");
+}
+let sortedarray=array.sort(function(a,b) {return a-b});
+console.log(sortedarray);
+let wasitfound = binary_search(array,99);
+console.log(wasitfound);
+
+Output:
+
+Found
+99
