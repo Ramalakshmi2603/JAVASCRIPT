@@ -1,0 +1,35 @@
+
+Given two strings. To print the characters
+from first string which are not in second string.
+
+PROGRAM:
+
+function mystring(str1,str2)
+{
+  let str3=[];
+  for(let i=0;i<str1.length;i++)
+  {
+    let count=0;
+    for(let j=0;j<str2.length;j++)
+    {
+      if(str1[i]===str2[j])
+      {
+        count++;
+      }
+    }
+    if(count==0)
+    {
+      str3.push(str1[i]);
+    }
+  }
+  console.log(str3.join())
+}
+
+let s1 = "javascript"
+let s2 = "java"
+mystring(s1,s2)
+
+
+OUTPUT:
+
+s,c,r,i,p,t

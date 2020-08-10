@@ -1,0 +1,27 @@
+GIVEN AN ARRAY CONTAINING N DISTINCT NUMBERS TAKEN FROM 
+0,1,2...N, FIND THE ONE THAT IS MISSING FROM THE ARRAY.
+
+PROGRAM:
+
+function missingterm(min,max)
+{
+  for(let i=min; i<=max; i++)
+  {
+    if(inputarray.includes(i)===false)
+    {
+      console.log(i);
+    }
+  }
+}
+let inputarray=[3,0,1];
+missingterm(Math.min(...inputarray),Math.max(...inputarray))
+
+INPUT1:
+[3,0,1]
+OUTPUT1:
+2
+
+INPUT2:
+[9,4,6,2,3,5,7,0,1]
+OUTPUT2:
+8

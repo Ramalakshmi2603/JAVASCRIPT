@@ -1,0 +1,32 @@
+GIVEN MATRIX. PRINT MATRIX WHICH CONTAIN ELEMENTS AT BORDER ARE 
+DOUBLED OF GIVEN MATRIX AND REMAINING ELEMENTS SHOULD HALF OF IT.
+
+PROGRAM:
+
+function matrixelements(input,row,col)
+{
+  for(let i=0;i<row;i++)
+  {
+    for(let j=0;j<col;j++)
+  {
+    if(i==0 || j==0)
+      input[i][j]*=2;
+    else if(i==row-1 || j==col-1)
+      input[i][j]*=2;
+    else
+      input[i][j]/=2;
+  }
+  }
+  for(let i=0;i<row;i++)
+  {
+    console.log(input[i].join(""))
+  }
+}
+let matrix=[[2,2,2],[2,2,2],[2,2,2]];
+matrixelements(matrix,matrix.length,matrix[0].length)
+
+OUTPUT:
+
+444
+414
+444
