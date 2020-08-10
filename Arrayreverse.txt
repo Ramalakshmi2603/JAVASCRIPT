@@ -1,3 +1,5 @@
+REVERSE THE GIVEN ARRAY.
+
 PROGRAM:
 
 function reversearray(arr) 
